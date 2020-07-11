@@ -1,0 +1,194 @@
+@import url('https://fonts.loli.net/css?family=Noto+Sans+SC:300,700&display=swap&subset=chinese-simplified');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: lighter;
+    background: #252A34;
+}
+
+body.dark {
+    background: #F8F8F8;
+    color: #252A34;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Noto Sans SC', Georgia, 'Times New Roman', Times, serif;
+    color:#F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14pt;
+    font-family: 'Noto Sans SC';
+    font-weight: lighter;
+    color: #BBB;
+}
+
+.dark h2 {
+    color: #666;
+}
+
+.header {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+h3.written-in-ink {
+    font-size: 9pt;
+    font-family: 'Noto Sans SC';
+    text-align: center;
+    font-weight: 700;
+    position: fixed;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0;
+}
+
+h3 a {
+    color: #04AEB6;
+}
+
+.dark h3.written-in-ink {
+    background: #F8F8F8;
+}
+
+
+/* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
+.outerContainer {
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 4em;
+    background: #252A34;
+}
+
+.dark .container {
+    background: #F8F8F8;
+}
+
+p {
+    font-size: 13pt;
+    color: #E3E4E5;
+    line-height: 1.7em;
+    font-weight: lighter;
+}
+
+a {
+    font-weight: 700;
+    font-family: 'Noto Sans SC';
+    transition: color 0.6s;
+    text-decoration: none;
+}
+
+.dark a {
+    color: #cc8f1a;
+    transition: color 0.6s;
+}
+
+.dark a:hover {
+    color: #252A34;
+}
+
+strong {
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
+.dark strong {
+    color: #252A34;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.container .hide {
+    opacity: 0.0;
+}
+
+.container .invisible {
+    display: none;
+}
+
+.container * {
+    opacity: 1.0;
+    transition: opacity 1.0s;
+}
+
+p.choice {
+    text-align: center;
+    line-height: 1.7em;
+}
+
+/* first choice */
+:not(.choice) + .choice {
+    padding-top: 1em; 
+}
+
+p.choice a {
+    font-size: 15pt;
+    color: #04AEB6;
+}
+
+p.choice a:hover {
+    color: #05D3DD;
+    transition: color 1s;
+}
+
+/* Built in class if you want to write:
+     The End # CLASS: end
+*/
+.end {
+    text-align: center;
+    font-weight: bold;
+    color: #F8F8F8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dark .end {
+    color: #252A34;
+
+}
+
+.foot {
+    width:100%; 
+    height:36px; 
+    line-height:1.7em;  
+    position:fixed; 
+    bottom:0px; 
+    left:0px; 
+    text-align:center;
+    color:#E3E4E5;
+    background:#181C23;
+}
+
+.foot a {
+    color:#E3E4E5;
+}
